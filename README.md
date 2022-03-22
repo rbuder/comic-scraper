@@ -21,3 +21,21 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> comic.downloadAll()
 
 ```
+
+# How to use
+
+This is still a highly manual WIP.
+
+```
+# Build the docker image
+./build.sh
+# run it
+./run.sh
+/usr/src/app # python
+Python 3.9.7 (default, Nov 24 2021, 21:15:59) 
+[GCC 10.3.1 20211027] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from dilbert import *
+>>> comic = Comic()
+>>> comic.downloadAll()
+```
