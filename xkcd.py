@@ -1,4 +1,3 @@
-from unittest import makeSuite
 from bs4 import BeautifulSoup
 from requests import get
 import os
@@ -53,9 +52,13 @@ class Comic:
             self.getPage(nextUrl)
             self.makeSoup()
             next = self.getNext()
-            src = self.getSrc()
-            self.downloadSource(
-                src["src"], int(next.replace("/", "")), src["title"], src["alt"]
-            )
+            try:
+                src = self.getSrc()
+                self.downloadSource(
+                    src["src"], int(next.replace("/", "")), src["title"], src["alt"]
+                )
+            except Exception as e:
+                print(e)
+                pass
             curUrl = nextUrl
             nextUrl = f"{self.__baseUrl}{next}"
