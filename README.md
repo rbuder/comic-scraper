@@ -8,13 +8,16 @@
 
 # Config
 
-Define a dict like so:
+Currently only runs interactively:
 ```
-comics = {
-  "xkcd" : {
-    "first": "https://xkcd.com/1/",
-    "div": "comic",
-    "tag": "img"
-  }
-}
+# virtualenv -p $(which python3) .env
+# source .env/bin/activate
+# pip install -r requirements.txt
+# python
+Python 3.10.2 (main, Jan 15 2022, 19:56:27) [GCC 11.1.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from dilbert import *
+>>> comic = Comic()
+>>> comic.downloadAll()
+
 ```
