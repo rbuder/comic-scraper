@@ -1,3 +1,8 @@
+# About
+
+This isn't to steal anyone's hard work. This is rather inspired by userfriendly.org going dark recently. *sad panda face*
+This is to keep a personal record of some of my favourite web comics.
+
 # Algorithm
 
 1. Config file should specify link to first comic page, html/div keyword to look for
